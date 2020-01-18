@@ -80,3 +80,20 @@ export const ActionText = styled.p`
         text-align: center;
     }
 `
+
+export const FooterBottom = styled.div`
+    height: 5rem;
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.2), rgba(128, 128, 128, 0.2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px #95989a;
+    flex-direction: row;
+    width: 100vw;
+`
+
+export const FooterContent = styled.p`
+    fontSize: 1.5rem;
+    color: '#000';
+    font-family: 'Open Sans', sans-serif;
+`
