@@ -8,20 +8,20 @@ const Footer = () => {
         <FooterContainer>
             <Section>
                 <FooterHeader>Contact us</FooterHeader>
-                <CallToActions href="mailto:someone@example.com">
+                <CallToActions href="mailto:shoumitra7@yahoo.co.in">
                     <img className="Images" src={Mail} alt="Mail" />
-                    <ActionText>example@gmail.com</ActionText>
+                    <ActionText>shoumitra7@yahoo.co.in</ActionText>
                 </CallToActions>
-                <CallToActions href="tel:+91-99-9999-999">
+                <CallToActions href="tel:+91-996-7570-336">
                     <img className="Images" src={Phone} alt="Phone" />
-                    <ActionText>+91-99-9999-999</ActionText>
+                    <ActionText>+91-996-7570-336</ActionText>
                 </CallToActions>
             </Section>
             <Section>
                 <FooterHeader>
                     Address
                 </FooterHeader>
-                <ActionText style={{ marginLeft: 0 }}>89-6343. Address17206 Old National Pike SW, Frostburg, MD, 21532  NameChip C Smith. </ActionText>
+                <ActionText style={{ marginLeft: 0 }}>Dona Paula Goa.</ActionText>
             </Section>
 
         </FooterContainer>
