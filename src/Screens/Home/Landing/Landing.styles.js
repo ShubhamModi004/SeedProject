@@ -8,6 +8,7 @@ export const Container = styled.div`
     @media screen and (max-width: 490px) {
         height: 50vh;
         width: 100%;
+        marginTop: 10%;
     }
 `
 
