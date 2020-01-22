@@ -177,7 +177,7 @@ export const CatImage = styled.div`
         align-self: center;
         margin-top: 2rem;
         .gatsby-image-wrapper {
-            height: 26rem;
+            height: 19rem;
             width: 100%;
             align-self: center;
         }
