@@ -33,9 +33,8 @@ export const PlayButton = styled.button`
     top: 46%;
     left: 46%;
     @media screen and (max-width: 490px) {
-        top: 45%;
+        top: 25%;
         left: 45%;
-        display: none;
     }
     z-index: 10;
     flex: 1;
