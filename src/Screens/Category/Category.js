@@ -28,23 +28,23 @@ import {
 function Caetgories(props) {
 
     return (
-        <Container>
+        <Container style={{ marginTop: 40 }}>
             {props.list && (
                 <Fragment>
-                    <Header><GreenSpan>{props.list.list.title}</GreenSpan></Header>
+                    <Header style={{ marginTop: '5rem' }}><GreenSpan>{props.list.list.title}</GreenSpan></Header>
                     <Description>{props.list.list.description}</Description>
                 </Fragment>
             )}
             {props.list && props.list.list.list.map((item, index) => (
                 <Fragment>
-                    <Title><GreenSpan>{item.title}</GreenSpan></Title>
+                    <Title style={{ marginTop: '5rem' }}><GreenSpan>{item.title}</GreenSpan></Title>
                     <Desc>{item.desc}</Desc>
                     <VidContainer>
                         {item.videos.map((video, index) => (
-                            <div key={index} style={{width: '30%', height: '30%'}}>
-                                <VideoPlayer  source={video.source} />
+                            <div key={index} style={{ width: '30%', height: '30%' }}>
+                                <iframe width="95%" height="95%" src={video.source} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                        ))}     
+                        ))}
                     </VidContainer>
                 </Fragment>
             ))}

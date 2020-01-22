@@ -196,3 +196,43 @@ export const CatImageBg = styled.div`
         display: none;
     }
 `
+
+export const AboutContainer = styled.div`
+    background: #fff;
+    border-radius: 5;
+    min-height: 20rem;
+    box-shadow: 2px 3px 6px 1px rgba(229, 223, 223, 0.46);
+    padding: 5% 5%;
+    margin: 10% 0;
+`
+
+export const AboutHeader = styled.h1`
+    font-family: Raleway;
+    font-size: 3rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    @media screen and (max-width: 490px) {
+        text-align: center;
+    }
+`
+
+export const AboutContent = styled.p`
+    font-family: Raleway;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    margin: 4% 0;
+    @media screen and (max-width: 490px) {
+        text-align: center;
+    }
+`
