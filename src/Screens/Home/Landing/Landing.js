@@ -3,6 +3,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Video, Container } from './Landing.styles';
+import { Player } from 'video-react';
 import video from "../../../assets/Home.mp4"
 
 import { PlayButton } from './Landing.styles';
@@ -16,13 +17,12 @@ class Landing extends Component {
         const { played } = this.state;
         return (
             <Container>
-                <Video
-                    ref={player => { this.player = player; }}
+                <Player
+                    ref={player => {
+                        this.player = player;
+                    }}
                     src={video}
                     type="video/mp4"
-                    loop
-                    playsinline="true"
-                    disablePictureInPicture="true"
                 />
                 {!played ? (
                     <PlayButton onClick={() => {

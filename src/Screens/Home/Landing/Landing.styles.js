@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -11,19 +11,19 @@ export const Container = styled.div`
     }
 `
 
-export const Video = styled.video`
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    min-width: 100%; 
-    min-height: 100%; 
-    width: auto; 
-    height: auto;
-    z-index: -1000; 
-    overflow: hidden;
-`
+// export const Video = styled.video`
+//     position: absolute;
+//     top: 50%; 
+//     left: 50%;
+//     -webkit-transform: translateX(-50%) translateY(-50%);
+//     transform: translateX(-50%) translateY(-50%);
+//     min-width: 100%; 
+//     min-height: 100%; 
+//     width: auto; 
+//     height: auto;
+//     z-index: -1000; 
+//     overflow: hidden;
+// `
 
 
 
@@ -34,6 +34,7 @@ export const PlayButton = styled.button`
     @media screen and (max-width: 490px) {
         top: 45%;
         left: 45%;
+        display: none;
     }
     z-index: 10;
     flex: 1;
@@ -43,4 +44,5 @@ export const PlayButton = styled.button`
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
+    display: block;
 `
